@@ -9,7 +9,10 @@ public class idade {
 		@SuppressWarnings("resource")
 		Scanner ler = new Scanner(System.in);
 		int dias, dias1, anos, meses;
-		System.out.println("Por gentileza, digite sua idade em dias: ");
+		String nome;
+		System.out.println("Por gentileza, digite seu nome: ");
+		nome = ler.nextLine();
+		System.out.println(nome+", agora digite sua idade em dias: ");
 		dias1 = ler.nextInt();
 		anos = dias1/365;
 		meses = (dias1%365)/30;
