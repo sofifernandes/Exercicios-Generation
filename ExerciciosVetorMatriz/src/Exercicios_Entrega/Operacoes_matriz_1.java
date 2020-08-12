@@ -51,7 +51,7 @@ public class Operacoes_matriz_1 {
 			case 2:
 				for(int linha=0; linha<2; linha++) {
 					for(int coluna = 0; coluna<2; coluna++) {
-						matriz3[linha][coluna]= matriz1[linha][coluna]-matriz2[linha][coluna];;
+						matriz3[linha][coluna]= matriz2[linha][coluna]-matriz1[linha][coluna];;
 					}
 				}
 				System.out.printf("\nMatriz resultante: \n");
