@@ -109,6 +109,8 @@ public class Operacoes_matriz_1 {
 					}
 				}
 				break;
+				default:
+					System.out.println("Opção inválida, por favor, reinicie com uma opção válida.");
 				
 		}
 			
