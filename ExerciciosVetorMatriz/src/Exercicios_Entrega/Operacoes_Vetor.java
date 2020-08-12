@@ -9,7 +9,7 @@ public class Operacoes_Vetor {
 		Scanner entrada = new Scanner(System.in);
 		
 		int vetor1[] = new int[6];
-		int soma_par=0, soma_impar=0, num_par=0, num_impar=0;
+		int cont=0,soma_par=0, num_par=0, num_impar=0;
 		
 		for(int i=0; i<6; i++) {
 				System.out.println("Digite um número: ");
@@ -25,14 +25,14 @@ public class Operacoes_Vetor {
 							
 				}
 				else {
-					soma_impar = soma_impar + vetor1[i];
 					num_impar = vetor1[i];	
+					cont++;
 					System.out.println("Valor "+(i+1)+" = "+num_impar+"\t(ímpar).");
 				}
 					
 		 }
 		
 		System.out.println("\nA soma dos números pares desse vetor é igual a: "+soma_par);
-		System.out.println("\nA soma dos números ímpares desse vetor é igual a: "+soma_impar);
+		System.out.println("\nA quantidade de números ímpares nesse vetor é igual a: "+cont);
 	}
 }
