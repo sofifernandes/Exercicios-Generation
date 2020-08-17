@@ -21,8 +21,7 @@ public class Aviao {
 	}
 	
 	 public void imprimirInfo (){
-		    System.out.println("Porte do avião: "+porte+"\n"+"Empresa: "+empresa+"\n"+"Número de lugares:  "+numeroLugares+"\n"+"Combustível atual: "+combustivelAtual+"\n"+"Quantidade de combustível necessária: "+combustivelNecessario+"\n"+"Velocidade atual: "+velocidadeAtual+"\n"+"Velocidade máxima: "+velocidadeMaxima+"\n");
-	 }
+		 System.out.println("Porte do avião: "+porte+"\n"+"Empresa: "+empresa+"\n"+"Número de lugares:  "+numeroLugares+"\n"+"Combustível atual: "+combustivelAtual+"\n"+"Quantidade de combustível necessária: "+combustivelNecessario+"\n"+"Velocidade atual: "+velocidadeAtual+"\n"+"Velocidade máxima: "+velocidadeMaxima+"\n");	 }
 	 public void imprimirNovaInfo (){
 		    System.out.println("Velocidade atual: "+velocidadeAtual);
 	 }

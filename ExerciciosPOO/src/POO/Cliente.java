@@ -17,14 +17,14 @@ public class Cliente {
 	    this.endereco = endereco;
 	    this.email = email;  			
 	}
-	int validarCpf() 
+	public void validarCpf() 
 	{
 		if (cpf.length()!=11) {
 			System.out.println("--Cpf inválido!!");
 		}else {
 			System.out.println("--Cpf válido!");
 		}
-		return 1;		
+				
 	}
 	 public void imprimirInfo (){
 		    System.out.println("Nome do(a) cliente: "+nome+"\n"+"Cpf: "+cpf+"\n"+"Idade: "+idade+"\n"+"Telefone: "+telefone+"\n"+"Endereço: "+endereco+"\n"+"E-mail: "+email);

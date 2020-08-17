@@ -1,5 +1,7 @@
 package POO;
 
+import java.util.Scanner;
+
 public class Funcionario {
 	private String nome;
 	private String cpf;
@@ -8,6 +10,7 @@ public class Funcionario {
 	private String endereco;
 	private String email;	
 	private int codigo;
+	Scanner ler = new Scanner(System.in);
 	
 	public Funcionario (String nome, String cpf, int idade, int telefone,String endereco, String email, int codigo) {
 		this.nome = nome;
@@ -19,24 +22,27 @@ public class Funcionario {
 	    this.codigo=codigo;
 	}
 	
-	int validarCpf() 
+	public void  validarCpf() 
 	{
+		System.out.println("Nos informe seu cpf: ");
+		cpf = ler.nextLine();
 		if (cpf.length()!=11) {
 			System.out.println("\n--Cpf inválido!!");
 		}else {
 			System.out.println("\n--Cpf válido!");
 		}
-		return 1;		
+				
 	}
 	
-	public int verificarCodigo() {
+	public void verificarCodigo() {
 		if (codigo<0) {
 			System.out.println("--Código inválido!\n");
 		}else {
 			System.out.println("--Código válido!\n");
 		}
-		return 1;
+		
 	}
+	
 	public void imprimirInfo (){
 	    System.out.println("Nome do(a) funcionário(a): "+nome+"\n"+"Cpf: "+cpf+"\n"+"Idade: "+idade+"\n"+"Telefone: "+telefone+"\n"+"Endereço: "+endereco+"\n"+"E-mail: "+email+"\n"+"Código: "+codigo);
 	}
