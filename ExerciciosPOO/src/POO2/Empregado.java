@@ -13,7 +13,7 @@ public class Empregado extends Pessoa{
 		this.imposto = imposto;
 	}
 	public void imprimirInfo (){
-	    System.out.println("\nNome do empregado: "+getNome()+"\n"+"Cpf: "+getCpf()+"\n"+"Idade: "+getIdade()+"\n"+"Telefone: "+getTelefone()+"\n"+"Endereço: "+getEndereco()+"\nCódigo setor: "+codigoSetor+"\nSalário base: "+salarioBase+"\nValor em porcentagem (sem o '%') de imposto a ser retido do salário: "+imposto);
+	    System.out.println("\nNome do empregado: "+getNome()+"\n"+"Cpf: "+getCpf()+"\n"+"Idade: "+getIdade()+"\n"+"Telefone: "+getTelefone()+"\n"+"Endereço: "+getEndereco()+"\nCódigo setor: "+codigoSetor+"\nSalário base: "+salarioBase+"\nValor em porcentagem de imposto a ser retido do salário: "+imposto);
 	}
 	
 	public void calcularSalario() {
