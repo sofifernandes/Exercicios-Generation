@@ -346,7 +346,7 @@ public class Jogador1 extends Pessoa{
 									"e em seu alcance temos um galho potencialmente danoso, você agacha rápido!! o agarra e o levanta acima da cabeça.");
 																	
 							
-							System.out.printf("Mas antes, me de 9 números, de 1 a 9 e preste atenção!! ");
+							System.out.printf("Mas antes, me de 9 números, e preste atenção!! ");
 							for(int linha=0; linha<3; linha++) {
 								for(int coluna = 0; coluna<3; coluna++) {
 									System.out.printf("\nDigite um número: ");
