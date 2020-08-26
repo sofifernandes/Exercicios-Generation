@@ -1,6 +1,6 @@
 create database db_ecommerce;
 
-
+-- Criação de tabela:
 use db_ecommerce;
 
 create table produtos(
@@ -12,7 +12,7 @@ create table produtos(
     primary key (id)
 );
 
-
+-- Todos os inserts:
 use db_ecommerce;
 
 insert into produtos(nome, categoria, preco, disponibilidade) values ("Controle", "Eletrônicos", 50.00, true);
@@ -31,9 +31,12 @@ insert into produtos(nome, categoria, preco, disponibilidade) values ("Vaso", "P
 insert into produtos(nome, categoria, preco, disponibilidade) values ("Estante", "Móveis", 5000.00, true);
 insert into produtos(nome, categoria, preco, disponibilidade) values ("Banco", "Móveis", 50.00, true);
 
-
+-- Todos os selects:
+ 
 select * from produtos where preco > 500;
 
 select * from produtos where preco < 500;
+
+-- Todas as atualizações:
 
 update produtos set categoria = "Mesa de jantar" where id = 10

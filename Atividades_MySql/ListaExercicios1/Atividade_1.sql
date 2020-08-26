@@ -1,5 +1,6 @@
 create database db_rh;
 
+-- Criação de tabela:
 use db_rh;
 create table Funcionarios(
 		id bigint auto_increment,
@@ -10,6 +11,7 @@ create table Funcionarios(
         primary key (id)
 );
 
+-- Todos os inserts:
 insert into Funcionarios(nome, cargo, telefone, salario) values ("Marco", "Gerente", 944454445, 5500.00);
 insert into Funcionarios(nome, cargo, telefone, salario) values ("Samanta", "Gerente de RH", 963636363, 4100.00);
 insert into Funcionarios(nome, cargo, telefone, salario) values ("Sabrina", "Desenvolvedora Java", 912121212, 5500.00);
@@ -26,10 +28,13 @@ insert into Funcionarios(nome, cargo, telefone, salario) values ("Carla", "Estag
 insert into Funcionarios(nome, cargo, telefone, salario) values ("Bárbara", "Gerente", 919191919, 5500.00);
 insert into Funcionarios(nome, cargo, telefone, salario) values ("Nina", "Diretora TI", 928282828, 12500.00);
 
+-- Todos os selects:
 
 select * from Funcionarios where salario > 2000;
 
 select * from Funcionarios where salario < 2000;
+
+-- Todas as atualizações:
 
 update funcionarios set nome = "Sofia" where id = 5
 

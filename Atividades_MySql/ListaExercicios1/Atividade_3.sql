@@ -1,7 +1,6 @@
 create database db_escola;
 
-use db_escola;
-
+-- Criação de tabela:
 use db_escola;
 
 create table alunos(
@@ -14,7 +13,7 @@ create table alunos(
     primary key (id)
 );
 
-
+-- Todos os inserts:
 
 insert into alunos(nome, matricula, nota, endereco, telefone) values ("Patricia", 2001, 10, "Rua A, nº1", 911111111);
 insert into alunos(nome, matricula, nota, endereco, telefone) values ("Elena", 2002, 9, "Rua B, nº2", 9222222222);
@@ -32,8 +31,10 @@ insert into alunos(nome, matricula, nota, endereco, telefone) values ("Keren", 2
 insert into alunos(nome, matricula, nota, endereco, telefone) values ("Laura", 2014, 9, "Rua D, nº15", 915151515);
 insert into alunos(nome, matricula, nota, endereco, telefone) values ("Leticia", 2015, 10, "Rua X, nº1", 911114444);
 
+-- Todos os selects:
 select * from alunos where nota > 7;
 
 select * from alunos where nota < 7;
 
+-- Todas as atualizações:
 update alunos set nome= "Pedro A" where id=6
