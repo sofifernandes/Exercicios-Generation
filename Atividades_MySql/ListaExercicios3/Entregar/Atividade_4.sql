@@ -4,6 +4,8 @@ create database db_cidade_das_carnes;
 
 -- Criação de tabelas:
 
+use db_cidade_das_carnes;
+
 create table tb_categoria (
     id bigint auto_increment,
     tipo varchar(20) not null,
