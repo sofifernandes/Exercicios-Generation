@@ -15,7 +15,7 @@ CREATE TABLE `tb_tema` (
 CREATE TABLE `tb_usuario` (
 	`id` INT(16) NOT NULL AUTO_INCREMENT,
 	`nome_completo` varchar(255) NOT NULL,
-	`email` varchar(255) NOT NULL,
+	`email` varchar(255) NOT NULL UNIQUE,
 	`senha` varchar(255) NOT NULL,
 	PRIMARY KEY (`id`)
 );
