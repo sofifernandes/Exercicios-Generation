@@ -2,7 +2,7 @@ package org.generation.blogPessoal.model;
 
 import java.util.Date;
 
-import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,7 +21,6 @@ import com.sun.istack.NotNull;
 public class Postagem {
 	
 	@Id	
-	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
