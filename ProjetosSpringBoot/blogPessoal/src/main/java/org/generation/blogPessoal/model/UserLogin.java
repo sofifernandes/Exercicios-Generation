@@ -8,6 +8,8 @@ public class UserLogin {
 	
 	private String senha;
 	
+	private String email;
+	
 	private String token;
 	
 	private boolean vendedor;
@@ -52,5 +54,15 @@ public class UserLogin {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	
 	
 }
